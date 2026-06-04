@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FACTORY_SENSOR - Industrial Structure</title>
+
+<style>
+body{
+    background:#0d1117;
+    color:#e6edf3;
+    font-family:Consolas, monospace;
+    padding:30px;
+}
+
+h1{
+    color:#58a6ff;
+}
+
+.folder{
+    color:#ffd866;
+    margin-top:8px;
+}
+
+.file{
+    color:#7ee787;
+    margin-left:30px;
+}
+
+.indent{
+    margin-left:25px;
+}
+
+.box{
+    background:#161b22;
+    border:1px solid #30363d;
+    padding:20px;
+    border-radius:12px;
+}
+
+.note{
+    color:#8b949e;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>FACTORY_SENSOR</h1>
+
+<div class="folder">📁 .pio</div>
+<div class="folder">📁 .vscode</div>
+
+<div class="folder">📁 include</div>
+<div class="file">📄 app_config.h</div>
+<div class="file">📄 pin_config.h</div>
+<div class="file">📄 project_defines.h</div>
+
+<div class="folder">📁 src</div>
+
+<div class="indent">
+
+<div class="folder">📁 app</div>
+<div class="file">📄 app_init.cpp</div>
+<div class="file">📄 app_init.h</div>
+<div class="file">📄 app_tasks.cpp</div>
+<div class="file">📄 app_tasks.h</div>
+
+<div class="folder">📁 core</div>
+<div class="file">📄 SensorManager.cpp</div>
+<div class="file">📄 SensorManager.h</div>
+
+<div class="folder">📁 drivers</div>
+<div class="file">📄 ADCDriver.cpp</div>
+<div class="file">📄 ADCDriver.h</div>
+<div class="file">📄 GPIODriver.cpp</div>
+<div class="file">📄 GPIODriver.h</div>
+<div class="file">📄 UARTDriver.cpp</div>
+<div class="file">📄 UARTDriver.h</div>
+
+<div class="folder">📁 Gsm</div>
+<div class="file">📄 GSMCommandHandler.cpp</div>
+<div class="file">📄 GSMCommandHandler.h</div>
+<div class="file">📄 GSMManager.cpp</div>
+<div class="file">📄 GSMManager.h</div>
+<div class="file">📄 GSMNetwork.cpp</div>
+<div class="file">📄 GSMNetwork.h</div>
+<div class="file">📄 GSMStatus.cpp</div>
+<div class="file">📄 GSMStatus.h</div>
+<div class="file">📄 GSMUtils.cpp</div>
+<div class="file">📄 GSMUtils.h</div>
+<div class="file">📄 SIM800L.cpp</div>
+<div class="file">📄 SIM800L.h</div>
+<div class="file">📄 SMSService.cpp</div>
+<div class="file">📄 SMSService.h</div>
+
+<div class="folder">📁 main</div>
+<div class="file">📄 main.cpp</div>
+
+<div class="folder">📁 protection</div>
+<div class="file">📄 PumpProtection.cpp</div>
+<div class="file">📄 PumpProtection.h</div>
+
+<div class="folder">📁 Relay</div>
+<div class="file">📄 MotorRelay.cpp</div>
+<div class="file">📄 MotorRelay.h</div>
+<div class="file">📄 RelayLogic.cpp</div>
+<div class="file">📄 RelayLogic.h</div>
+<div class="file">📄 RelayManager.cpp</div>
+<div class="file">📄 RelayManager.h</div>
+<div class="file">📄 RelayStatus.cpp</div>
+<div class="file">📄 RelayStatus.h</div>
+<div class="file">📄 RelayUtils.cpp</div>
+<div class="file">📄 RelayUtils.h</div>
+
+<div class="folder">📁 sensor</div>
+<div class="file">📄 FloatSensor.cpp</div>
+<div class="file">📄 FloatSensor.h</div>
+<div class="file">📄 HighLevelSensor.cpp</div>
+<div class="file">📄 HighLevelSensor.h</div>
+<div class="file">📄 LowLevelSensor.cpp</div>
+<div class="file">📄 LowLevelSensor.h</div>
+<div class="file">📄 SensorStatus.cpp</div>
+<div class="file">📄 SensorStatus.h</div>
+<div class="file">📄 SensorUtils.cpp</div>
+<div class="file">📄 SensorUtils.h</div>
+<div class="file">📄 TankLevelLogic.cpp</div>
+<div class="file">📄 TankLevelLogic.h</div>
+
+<div class="folder">📁 services</div>
+<div class="file">📄 CloudService.cpp</div>
+<div class="file">📄 CloudService.h</div>
+<div class="file">📄 OTAService.cpp</div>
+<div class="file">📄 OTAService.h</div>
+
+<div class="folder">📁 state_machine</div>
+<div class="file">📄 SystemStateMachine.cpp</div>
+<div class="file">📄 SystemStateMachine.h</div>
+
+<div class="folder">📁 utils</div>
+<div class="file">📄 Logger.cpp</div>
+<div class="file">📄 Logger.h</div>
+<div class="file">📄 RetryHandler.cpp</div>
+<div class="file">📄 RetryHandler.h</div>
+
+<div class="folder">📁 WDT reset handler</div>
+<div class="file">📄 NVSConfig.cpp</div>
+<div class="file">📄 NVSConfig.h</div>
+
+</div>
+
+<div class="file">📄 .gitignore</div>
+<div class="file">📄 platformio.ini</div>
+
+<p class="note">
+Industrial Embedded + IoT Architecture for ESP32 Smart Water Tank Automation using GSM + Relay + OTA + Cloud Services
+</p>
+
+</div>
+
+</body>
+</html>
